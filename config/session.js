@@ -11,6 +11,10 @@
 
 module.exports.session = {
 
+  cookie: {
+    secure: true
+  },
+
   /***************************************************************************
   *                                                                          *
   * Session secret is automatically generated when your new app is created   *
@@ -20,9 +24,7 @@ module.exports.session = {
   ***************************************************************************/
   secret: '84a135a49b90ce9d5d236b36d7b26390',
 
-  cookie: {
-    secure: true
-  }
+
 
   /***************************************************************************
   *                                                                          *

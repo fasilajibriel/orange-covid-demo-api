@@ -11,6 +11,10 @@
 
 module.exports.http = {
 
+  customMiddleware: function(app) {
+    app.enable('trust proxy');
+  },
+
   /****************************************************************************
   *                                                                           *
   * Sails/Express middleware to run for every HTTP request.                   *
