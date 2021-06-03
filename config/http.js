@@ -20,11 +20,9 @@ module.exports.http = {
   *                                                                           *
   ****************************************************************************/
 
-  middleware: {
+  trustProxy: false,
 
-    customMiddleware: function(app) {
-      app.enable('trust proxy');
-    },
+  middleware: {
 
     /***************************************************************************
     *                                                                          *
